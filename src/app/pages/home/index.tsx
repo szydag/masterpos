@@ -1,7 +1,7 @@
 'use client'
 import * as styles from './styles'
-import { localize } from "@/app/locales/localize";
-import { useTheme } from "@/app/themes/useTheme";
+import { localize } from "@/app/locales";
+import { useTheme } from "@/app/themes";
 
 export default function Home() {
   const theme = useTheme();
@@ -10,6 +10,7 @@ export default function Home() {
     <div className={styles.container}>
       <h1 className={styles.title}
           style={{
+            ...theme.typography.label,
             color: theme.colors.blue
           }}
       >

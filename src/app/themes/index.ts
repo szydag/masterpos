@@ -1,7 +1,17 @@
-import light from "./variants/light";
-import dark from "./variants/dark";
+import { useEffect, useState } from "react";
+import darkTheme from "./variants/dark";
+import lightTheme from "./variants/light";
 
-export const themes = {
-    light,
-    dark,
-};
+export function useTheme() {
+  const [theme, setTheme] = useState(lightTheme);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme(darkTheme);
+    } else {
+      setTheme(lightTheme);
+    }
+  }, []);
+
+  return theme;
+} 
