@@ -8,7 +8,6 @@ export const container = `
 `
 
 export const title = `
-    text-gray-800
     text-3xl
     font-bold
 `

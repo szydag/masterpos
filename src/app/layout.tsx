@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Home from './home'
+import Home from './pages/home'
 
 export const metadata: Metadata = {
   title: 'MasterPos',
