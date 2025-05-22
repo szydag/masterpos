@@ -18,7 +18,7 @@ export const colors: Colors = {
 
 export const typography: Typography = {
     label: {
-        fontFamily: "Cario",
+        fontFamily: "Cairo, sans-serif",
         fontWeight: "400",
         fontSize: 14
     }

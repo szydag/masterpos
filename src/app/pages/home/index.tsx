@@ -1,6 +1,6 @@
 'use client'
 import * as styles from './styles'
-import { localize } from "@/app/types/localize";
+import { localize } from "@/app/locales/localize";
 import { useTheme } from "@/app/themes/useTheme";
 
 export default function Home() {
@@ -15,13 +15,14 @@ export default function Home() {
       >
         {localize("title")}
       </h1>
-      <h2
+      <div
         style={{
+          ...theme.typography.label,
           color: theme.colors.blue
         }}
       >
         {localize("subtitle")}
-      </h2>
+      </div>
     </div>
   )
 }

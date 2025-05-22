@@ -1,5 +1,5 @@
-import trTR from "@/app/locales/variants/tr-TR";
-import enUS from "@/app/locales/variants/en-US";
+import trTR from "./variants/tr-TR";
+import enUS from "./variants/en-US";
 
 const locales = {
   "tr-TR": trTR,
