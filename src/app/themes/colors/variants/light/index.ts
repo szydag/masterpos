@@ -2,7 +2,7 @@ import {
     DesignTokens,
     Typography,
     Colors
-} from "@/app/types";
+} from "@/app/themes/types";
 
 type Theme = {
     key: string;

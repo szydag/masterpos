@@ -1,4 +1,4 @@
-import { Translations } from "@/app/types";
+import { Translations } from "@/app/themes/types";
 
 const enUS: {
     translations: Translations;

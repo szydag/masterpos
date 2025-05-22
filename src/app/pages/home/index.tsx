@@ -1,7 +1,7 @@
 'use client'
 import * as styles from './styles'
-import { localize } from "@/app/locales";
-import { useTheme } from "@/app/themes";
+import { localize } from "@/app/themes/locales";
+import { useTheme } from "@/app/themes/colors";
 
 export default function Home() {
   const theme = useTheme();
